@@ -1,4 +1,58 @@
-<ion-content>
-    Tabs1Tab1
-  </ion-content>
+<ion-content padding>
+  <ion-list no-lines>
+    <ion-title>
+      Tabs1Tab1
+    </ion-title>
+    <ion-item>
+      <button full ion-button (click)="one()">
+        this.navCtrl.push(this.nextPage);
+      </button>
+    </ion-item>
+    <ion-item>
+      <button full ion-button (click)="two()">
+        this.navCtrl.setRoot(this.nextPage);
+      </button>
+    </ion-item>
+    <ion-item>
+      <button full ion-button (click)="three()">
+        this.app.getRootNavs()[0].push(this.nextPage);
+      </button>
+    </ion-item>
+    <ion-item>
+      <button full ion-button (click)="four()">
+        this.app.getRootNavs()[0].setRoot(this.nextPage);
+      </button>
+    </ion-item>
+    <ion-item>
+      <button full ion-button (click)="five()">
+        this.app.getRootNav().push(this.nextPage);
+      </button>
+    </ion-item>
+    <ion-item>
+      <button full ion-button (click)="six()">
+        this.app.getRootNav().setRoot(this.nextPage);
+      </button>
+    </ion-item>
+    <ion-item>
+      <button full ion-button (click)="seven()">
+        this.app.getActiveNav().push(this.nextPage);
+      </button>
+    </ion-item>
+    <ion-item>
+      <button full ion-button (click)="eight()">
+        this.app.getActiveNav().setRoot(this.nextPage);
+      </button>
+    </ion-item>
+    <ion-item>
+      <button full ion-button (click)="nine()">
+        this.app.getActiveNavs()[0].push(this.nextPage);
+      </button>
+    </ion-item>
+    <ion-item>
+      <button full ion-button (click)="ten()">
+        this.app.getActiveNavs()[0].setRoot(this.nextPage);
+      </button>
+    </ion-item>
+  </ion-list>
 
+</ion-content>

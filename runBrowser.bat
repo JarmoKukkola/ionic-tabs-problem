@@ -1,1 +1,1 @@
-ionic cordova run browser
+ionic cordova run browser --livereload
