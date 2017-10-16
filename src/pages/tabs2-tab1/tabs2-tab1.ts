@@ -8,7 +8,7 @@ import { IonicPage, NavController, App } from 'ionic-angular';
 })
 export class Tabs2Tab1Page {
 
-  previousPage='Tabs2Page';
+  previousPage='Tabs1Page';
   
     constructor(public navCtrl: NavController, public app:App) {
     }
