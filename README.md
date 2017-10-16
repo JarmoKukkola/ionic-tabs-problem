@@ -1,5 +1,5 @@
 # Demonstrating a bug in Ionic 3
-Navigation between pages with ion-tabs elements is broken (or not well documented).
+I have two pages that each have ion-tabs elements (Tabs1Page and Tabs2Page). Navigation between the two pages has proven difficult. I made a demo project, which demonstrates the issues.
 
 Expected behaviour:
 
