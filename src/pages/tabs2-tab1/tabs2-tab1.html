@@ -1,3 +1,59 @@
-<ion-content padding>   
-Tabs2Tab1
-</ion-content>      
+<ion-content padding>
+    <ion-list no-lines>
+      <ion-title>
+        Tabs2Tab1
+      </ion-title>
+      <ion-item>
+        <button full ion-button (click)="one()">
+            this.navCtrl.pop();
+        </button>
+      </ion-item>
+      <ion-item>
+        <button full ion-button (click)="two()">
+          this.navCtrl.setRoot(this.previousPage);
+        </button>
+      </ion-item>
+      <ion-item>
+        <button full ion-button (click)="three()">
+          this.app.getRootNavs()[0].pop();
+        </button>
+      </ion-item>
+      <ion-item>
+        <button full ion-button (click)="four()">
+          this.app.getRootNavs()[0].setRoot(this.previousPage);
+        </button>
+      </ion-item>
+      <ion-item>
+        <button full ion-button (click)="five()">
+          this.app.getRootNav().pop();
+        </button>
+      </ion-item>
+      <ion-item>
+        <button full ion-button (click)="six()">
+          this.app.getRootNav().setRoot(this.previousPage);
+        </button>
+      </ion-item>
+      <ion-item>
+        <button full ion-button (click)="seven()">
+          this.app.getActiveNav().pop();
+        </button>
+      </ion-item>
+      <ion-item>
+        <button full ion-button (click)="eight()">
+          this.app.getActiveNav().setRoot(this.previousPage);
+        </button>
+      </ion-item>
+      <ion-item>
+        <button full ion-button (click)="nine()">
+          this.app.getActiveNavs()[0].pop();
+        </button>
+      </ion-item>
+      <ion-item>
+        <button full ion-button (click)="ten()">
+          this.app.getActiveNavs()[0].setRoot(this.previousPage);
+        </button>
+      </ion-item>
+    </ion-list>
+  
+  </ion-content>
+  
